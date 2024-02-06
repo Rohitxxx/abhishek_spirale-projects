@@ -1,0 +1,200 @@
+ .hero-text{
+
+     overflow: hidden;
+    display: block;
+    position: relative;
+   /* background: #f1f0f5;*/
+   background-image: url("../image/bgn-people-8.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center top;
+
+  /* opacity: 0.6;*/
+
+   
+  }
+
+.hero-text .hero {
+  position: relative;
+}
+.avtser{
+  border-radius: 50%;
+}
+.headercontent1{
+  padding-top: 150px;
+  padding-left: 90px;
+}
+.headercontent1 p{
+  font-size: 18px;
+}
+#phh{
+  font-size: 25px;
+  letter-spacing: 0.1em;
+}
+.phed{
+    padding-bottom: 70px;
+}
+.headercontent2{
+  padding-top: 130px;
+}
+.headercontent3{
+  padding-top: 130px;
+}
+.counter0{
+  padding-left: 100px;
+}
+.counter1 {
+padding-left: 100px;
+}
+.counter1 span{
+  color: #ac3537;
+}
+.counter1 i{
+  color: #ac3537;
+  font-size: 35px;
+}
+.counter2 span{
+  color: #ac3537;
+}
+.counter2 i{
+  color: #ac3537;
+  font-size: 35px;
+}
+.counter3 span{
+  color: #ac3537;
+}
+.counter3 i{
+  color: #ac3537;
+  font-size: 35px;
+}
+.counter4 span{
+  color: #ac3537;
+}
+.counter4 i{
+  color: #ac3537;
+  font-size: 35px;
+}
+
+
+.hrline{
+  height: 4px;width: 90px;margin-left: 60px; background:#ac3537;
+}
+
+@media(max-width: 586px) {
+ .headercontent1{
+  padding-top: 0px;
+  padding-left: 90px;
+}
+.headercontent2{
+  padding-top: 40px;
+  text-align: center;
+}
+.headercontent3{
+  padding-top: 40px;
+  text-align: center;
+}
+.avtser{
+  border-radius: 50%;
+  height: 160;
+  width: 160;
+  left: 0;
+  margin-right: 90px;
+}
+.counter1 {
+text-align: center;
+}
+.counter2 {
+text-align: center;
+}
+.counter3 {
+text-align: center;
+}
+.counter4 {
+text-align: center;
+}
+.hrline {
+  text-align: center;
+
+ margin-left: 60px; 
+}
+
+}
+@media(max-width: 786px) {
+ .headercontent1{
+  padding-top: 0px;
+  padding-left: 90px;
+}
+.headercontent2{
+  padding-top: 40px;
+  text-align: center;
+}
+.headercontent3{
+  padding-top: 40px;
+  text-align: center;
+}
+.avtser{
+  border-radius: 50%;
+  height: 160;
+  width: 160;
+  left: 0;
+  margin-right: 90px;
+}
+.counter1 {
+text-align: center;
+}
+.counter2 {
+text-align: center;
+}
+.counter3 {
+text-align: center;
+}
+.counter4 {
+text-align: center;
+}
+.hrline {
+  text-align: center;
+
+ margin-left: 60px; 
+}
+
+}
+
+@media(max-width: 385px) {
+ .headercontent1{
+  padding-top: 0px;
+  padding-left: 90px;
+}
+.headercontent2{
+  padding-top: 40px;
+  text-align: center;
+}
+.headercontent3{
+  padding-top: 40px;
+  text-align: center;
+}
+.avtser{
+  border-radius: 50%;
+  height: 160;
+  width: 160;
+  left: 0;
+  margin-right: 90px;
+}
+.counter1 {
+text-align: center;
+}
+.counter2 {
+text-align: center;
+}
+.counter3 {
+text-align: center;
+}
+.counter4 {
+text-align: center;
+}
+.hrline {
+  text-align: center;
+
+ margin-left: 60px; 
+}
+
+}

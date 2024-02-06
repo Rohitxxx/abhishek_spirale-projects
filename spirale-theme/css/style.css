@@ -1,0 +1,647 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+     /* font-family: "Helvetica Neue",sans-serif;*/
+     font-family: "Roboto",Arial,Helvetica,sans-serif;
+      font-weight: lighter;
+     /* letter-spacing: 0.1em;*/
+}
+
+.content {
+      width: 100%;
+     /* margin: 1em auto;*/
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+.logo a{
+      color: #ac3537;
+}
+
+nav {
+
+      position: fixed;
+      width: 100%;
+      line-height: 80px;
+      background: transparent;
+      top: 0;
+      z-index: 1000;
+
+    
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: black;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 60px;
+      transition: 1s;
+}
+
+nav.black ul {
+      width: 100%;
+      background: white;
+      color: black;
+      /*box-shadow: 7px 7px  #f1f0f5;*/
+    
+    
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 20px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #181818;
+      font-size: 20px;
+      font-family: Bahnschrift SemiBold;
+}
+
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+     .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  
+  }
+
+
+  #ovelayspan{
+   display: block;
+  }
+  #navdesktop{
+   display: none;
+  }
+}
+
+
+
+
+/*for Mobile View*/
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+#ovelayspan{
+   display: none;
+  }
+
+
+@media screen and (max-width: 500px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  
+  }
+  #ovelayspan{
+   display: block;
+  }
+  #navdesktop{
+   display: none;
+  }
+
+  .isd{
+
+  }
+
+}
+
+#logbtn{
+      background: #ac3537;
+      color: white;
+      line-height: 40px;
+      letter-spacing: 0.4em;
+     font-size: 13px;
+      border-radius: 30px;
+
+}
+#myNav .black{
+      background: white;
+}
+
+/*slider css*/
+.about{
+      text-align: center;
+      color: #ac3537;
+}
+
+#team{
+     background-image: url("../image/bgn-team.jpg");
+        background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+
+
+  
+}
+#iteamcont{
+     padding-left:60px ;
+}
+.vcccol{
+      padding-top: 80px;
+      margin-top: 80px;
+      top: 80%;
+}
+#team p{
+    
+      text-align: left;
+      display: flex;
+}
+#team h3{
+      text-align: left;
+      
+}
+.item{
+      background-image: url("../image/bgn-people.png");
+        background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+
+}
+.vccrow h2{
+      font-weight: lighter;
+         font-family: "Barlow",Arial,Helvetica,sans-serif;
+     /*  letter-spacing: 0.1em;*/
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: ;
+  transform: rotateY(180deg);
+}
+
+/* For desktop: */
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
+
+@media(max-width: 786px) {
+
+
+    .vccicon{
+      text-align: center;
+  background: #181818;
+  border-radius:50%;
+  color: white;
+padding-top: 20px;
+  /*padding-right: px;*/
+  padding-left: 50px;
+ font-size: 32px;
+height: 50px;
+/*width: 30px;*/
+width: max-content;
+position: relative;
+
+ 
+  }
+
+.vcciconteam{
+  background: #ac3537;
+  border-radius:50%;
+  color: white;
+  padding: 11px;
+ font-size: 43px;
+height: 60px;
+width: 60px;
+position: relative;
+
+}
+.vcctext h3{
+  color:#ac3537 ;
+  font-weight: bold;
+
+}
+.vcctext p{
+
+        font-weight: inherit;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+       letter-spacing: 0.5;
+       font-size: 17px;
+
+}
+.vcctext2 h3{
+   font-weight: bold;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+
+}
+.vcctext2 p{
+         font-weight: inherit;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+       letter-spacing: 0.5;
+       font-size: 17px;
+
+
+}
+.isd{
+
+       background: #181818;
+  border-radius:50%;
+  color: white;
+padding-top: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 30px;
+ font-size: 45px;
+height: 20px;
+width: 20px;
+position: relative;
+
+
+}
+
+}
+@media(max-width: 500px) {
+
+  .vccicon{
+  background: #181818;
+  border-radius:50%;
+  color: white;
+/*padding-top: 20px;
+  padding-right: 0px;
+  padding-left: 90px;*/
+ font-size: 15px;
+ /*   width: max-content;*/
+   width: max-content; 
+
+position: relative;
+
+ 
+  }
+  .col-xs-12 {
+    width: max-content;
+}
+
+.vcciconteam{
+  background: #ac3537;
+  border-radius:50%;
+  color: white;
+  padding: 11px;
+  padding-left: 100px;
+  margin-left: 10px;
+ font-size: 45px;
+/*height: 65px;
+width: 65px;*/
+  width: max-content; 
+position: relative;
+
+}
+.vcctext h3{
+  color:#ac3537 ;
+  font-weight: bold;
+
+}
+.vcctext p{
+
+        font-weight: inherit;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+       letter-spacing: 0.5;
+       font-size: 17px;
+
+}
+.vcctext2 h3{
+   font-weight: bold;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+
+}
+.vcctext2 p{
+         font-weight: inherit;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+       letter-spacing: 0.5;
+       font-size: 17px;
+
+
+}
+.isd{
+
+       background: #181818;
+  border-radius:50%;
+  color: white;
+
+ font-size: 45px;
+
+
+
+}
+
+.container-fluid{
+  top: 0;
+}
+.container{
+top: 0;
+
+}
+      
+}
+
+.container-fluid{
+      margin-top: 40px;
+      padding-top: 20px;
+
+}
+.container{
+      margin-top: 40px;
+      padding-top: 20px;
+
+}
+
+
+  .vccicon{
+  background: #181818;
+  border-radius:50%;
+  color: white;
+padding-top: 20px;
+  padding-right: 0px;
+  padding-left: 90px;
+ font-size: 45px;
+height: 67px;
+width: 67px;
+position: relative;
+
+ 
+  }
+
+.vcciconteam{
+  background: #ac3537;
+  border-radius:50%;
+  color: white;
+
+padding-top: 10px;
+  padding-right: 0px;
+  padding-left: 100px;
+ font-size: 45px;
+height: 67px;
+width: 67px;
+position: relative;
+
+}
+.vcctext h3{
+  color:#ac3537 ;
+  font-weight: bold;
+
+}
+.vcctext p{
+
+        font-weight: inherit;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+       letter-spacing: 0.5;
+       font-size: 17px;
+
+}
+.vcctext2 h3{
+   font-weight: bold;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+
+}
+.vcctext2 p{
+         font-weight: inherit;
+   color: black;
+       font-family: "Barlow",Arial,Helvetica,sans-serif;
+       letter-spacing: 0.5;
+       font-size: 17px;
+
+
+}
+.isd{
+
+       background: #181818;
+  border-radius:50%;
+  color: white;
+ font-size: 43px;
+
+padding-top: 10px;
+  padding-right: 0px;
+  padding-left: 90px;
+ font-size: 45px;
+height: 67px;
+width: 67px;
+position: relative;
+
+
+}
+.text{
+  color:#ac3537 ;
+  font-family:  Bahnschrift SemiBold;
+  
+
+}
+.vcccon{
+     padding-left: 70px;
+}
+.vccrow{
+      margin: 8px;
+}
+.vrr{
+      background-image: url("../image/bgn-quote.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      padding-bottom: 100px;
+ 
+}
+.vrr p{
+      margin-top: 100px;
+
+      text-align: center;
+      font-size: 14px;
+
+}
+.vrr h3{
+
+      text-align: center;
+     
+
+}
+.vrr button{
+   
+
+      text-align: center;
+   
+
+}
+.vcccol2{
+      margin-top: 50px;
+
+}
+.vcccol2 h3{
+       color: #ac3537;
+       font-weight: bold;
+}
+.vcccol3{
+       margin-top: 150px;
+}
+.vcccol3 h3{
+       color: #ac3537;
+       font-weight: bold;
+}
+.footerleft{
+      background-image: url(../image/bgn-portfolio-1.png);
+     
+      background-repeat: no-repeat;
+      background-position: left;
+      text-align: center;
+      padding-top: 80px;
+        font-family: "Roboto",Arial,Helvetica,sans-serif;
+
+}
+.footerleft p{
+      font-size: 14px;
+      font-weight: lighter;
+}
+.footerleft h3{
+      font-weight: bold;
+      font-size: 35px;
+}
+.footerleft span{
+      font-weight: lighter;
+      font-size: 17px;
+      letter-spacing: 0.1em;
+}
+
+
+.footerright iframe {
+
+  background-color: gray;
+  text-align: center;
+      width: 100%;
+
+
+}
+#fadeus{
+    padding-left: 60px;
+}
+#fadeuss{
+
+     padding-left: 70px;
+
+}
+
